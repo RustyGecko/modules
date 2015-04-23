@@ -4,8 +4,8 @@ use core::default::Default;
 use collections::vec::Vec;
 use collections::string::String;
 
-use {cmu, gpio, usart};
-use gpio::Port;
+use emlib::{cmu, gpio, usart};
+use emlib::gpio::Port;
 
 use self::Location::*;
 

@@ -1,6 +1,6 @@
 #![allow(dead_code)]
-use modules::dma::Readable;
-use {adc, dma};
+use dma::Readable;
+use emlib::{adc, dma};
 
 use libc::c_void;
 use core::intrinsics::transmute;

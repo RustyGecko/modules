@@ -1,5 +1,5 @@
 use emdrv::gpioint;
-use {cmu, gpio};
+use emlib::{cmu, gpio};
 
 pub struct GpioPin {
     pub port: gpio::Port,

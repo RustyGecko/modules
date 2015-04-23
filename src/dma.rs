@@ -5,7 +5,7 @@ use core::intrinsics::transmute;
 use core::prelude::*;
 use core::cmp::min;
 use core::ptr;
-use dma;
+use emlib::dma;
 
 pub static mut dma0: Dma = Dma {
     device: dma::DMA{ channel: 0 },
