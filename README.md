@@ -1,4 +1,6 @@
-# modules
+# modules 
+[![Build Status](https://travis-ci.org/RustyGecko/modules.svg?branch=master)](https://travis-ci.org/RustyGecko/modules)
+
 Experimental library with high-level abstractions for
 [emlib](https://github.com/RustyGecko/emlib) peripheral bindings.
 
