@@ -11,7 +11,7 @@ keywords = ["modules", "emlib"]
 
 [features]
 stk3700 = ["emlib/stk3700", "emdrv/stk3700"]
-dk3750 = ["emlib/dk3750", "emdrv/dk3700"]
+dk3750 = ["emlib/dk3750", "emdrv/dk3750"]
 
 [target.thumbv7m-none-eabi.dependencies.core]
 git = "https://github.com/RustyGecko/rust-core.git"
