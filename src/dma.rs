@@ -6,6 +6,7 @@ use core::prelude::*;
 use core::cmp::min;
 use core::ptr;
 use emlib::dma;
+use emdrv::dmactrl;
 
 pub static mut dma0: Dma = Dma {
     device: dma::DMA{ channel: 0 },
@@ -89,7 +90,7 @@ pub struct Dma {
 pub fn init() {
     dma::init(&dma::Init {
         hprot: 0,
-        control_block: dma::dma_control_block(),
+        control_block: dmactrl::dma_control_block(),
     });
 }
 
