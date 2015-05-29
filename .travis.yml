@@ -7,5 +7,8 @@ before_script:
   - sudo apt-get install gcc-arm-none-eabi
 
 script:
+  - cargo build --target thumbv7m-none-eabi --features stk3700
+  - cargo build --target thumbv7m-none-eabi --features dk3750
   - make EXAMPLE=usart
   - make EXAMPLE=gpio
+
