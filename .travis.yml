@@ -1,4 +1,5 @@
 language: rust
+rust: nightly
 
 before_script:
   - sudo add-apt-repository ppa:terry.guo/gcc-arm-embedded -y
@@ -6,5 +7,6 @@ before_script:
   - sudo apt-get install gcc-arm-none-eabi
 
 script:
-    - cargo build --target thumbv7m-none-eabi --features stk3700
-    - cargo build --target thumbv7m-none-eabi --features dk3750
+  - make KIT=stk3700
+  - make KIT=dk3750
+  - make examples
